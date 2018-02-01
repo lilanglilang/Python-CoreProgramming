@@ -6,7 +6,7 @@ class Test(object):
         print("python")
 @Test
 def test():
-    print("hello")
+    print("fff")
 test()
 '''
 hello
