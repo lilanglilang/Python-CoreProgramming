@@ -11,7 +11,8 @@ if __name__=='__main__':
     p=Pool(4)
     for i in range(10):
         print("-----%d----"%i)
-        p.apply_async(work,(i,))
+        p.apply_async(work,(i,))#非阻塞方式
+        # p.apply(work,(i,))#阻塞方式
     p.close()
     p.join()#没有这个的话，进程池中的任务很有可能不会执行
 
